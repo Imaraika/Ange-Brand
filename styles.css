@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color:white;
+    
+    /* background-repeat: no-repeat;
+    /* background-size: contain; */
+    /* background-position: right;
+    padding: 100px; */ 
+
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    word-spacing: 1em;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 40px;
+    padding-top: 10px;
+
+        
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+nav > div > a:hover{
+    color: rgb(214, 157, 35);
+}
+section{
+    display: flex;
+    /* height: 100%; */
+    
+}
+main{
+    background-image: url('imageBckg.png');
+    background-repeat: no-repeat;
+    background-size: contain; 
+    height:1000px;
+    width: 700px;
+    /* margin-top: 0;  */
+    margin-left:40%; 
+    /* margin-left: 10px;
+    display: flex;
+/* justify-content: flex-end; */
+   
+}
+.descrptionmessage{
+    display: flex; 
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+    padding-top: 5rem;
+    font-size: 24px;
+    transition: all 2s ease;
+
+}
+#phd{
+    font-size: 24px;
+    font-weight: lighter;
+}
+#pmd{
+    font-size: 48px;
+    font-weight: bold;
+}
+#pfd{
+    font-size: 24px;
+    font-weight: lighter;
+    color: beige;
+    
+}
+#learnme{
+    color: rgb(214, 157, 35);
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
