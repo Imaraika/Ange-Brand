@@ -54,8 +54,10 @@ nav > div > a:hover{
     transition: all 2s ease;
 
 }
-h4{
-    color:  rgb(241, 183, 9);
+.andela{
+    color:  rgb(214, 157, 35);
+    font-family: 'Times New Roman', Times, serif;
+
 }
 #phd{
     font-size: 24px;
@@ -74,4 +76,6 @@ h4{
     color: rgb(214, 157, 35);
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    word-spacing: normal;
 }
