@@ -14,7 +14,7 @@ body{
 .body{
     background-image: linear-gradient(0deg,#000,transparent 70%,transparent),url('imageBckg.png');
     background-repeat: no-repeat;
-    background-position: 0 0,80% 0%;
+    background-position: 0 0,90% 0%;
     background-size:auto, contain;
     background-attachment: scroll, fixed;
     background-color: black;
