@@ -65,12 +65,16 @@ nav > div > a:hover{
 #pmd{
     font-size: 36px;
     display: block;
+    font-size: 46px;
+    font-weight: bold;
+
 }
 #pfd{
     font-size: 24px;
     font-weight: lighter;
+    ft-aboutpage
     color: lightgray;
-    
+  
 }
 #learnme{
     color: rgb(214, 157, 35);
