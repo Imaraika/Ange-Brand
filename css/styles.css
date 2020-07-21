@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 991px){
+body{
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    justify-content: center;
+}
+}
+.body{
+    background-image: linear-gradient(0deg,#000,transparent 70%,transparent),url('../Asset/images/imageBckg.png');
+    background-repeat: no-repeat;
+    background-position: 0 0,90% 0%;
+    background-size:auto, contain;
+    background-attachment: scroll, fixed;
+    background-color: black;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    word-spacing: 0.7rem;
+    
+}
+nav {
+    padding: 10px 10px 0px 60px;
+    display: flex;
+    background-attachment: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+        
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+nav > div > a:hover{
+    color: rgb(214, 157, 35);
+}
+
+.descrptionmessage{
+    width: 100%;
+    display: block;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 80px 10px 660px 60px;
+    background-image: none;
+    transition: all 2s ease;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.link{
+    color:  rgb(214, 157, 35);
+    font-family: 'Times New Roman', Times, serif;
+
+}
+#phd{
+    font-size: 24px;
+}
+#pmd{
+    font-size: 36px;
+    display: block;
+    font-size: 46px;
+    font-weight: bold;
+
+}
+#pfd{
+    font-size: 24px;
+    font-weight: lighter;
+    color: lightgray;
+  
+}
+#learnme{
+    color: rgb(214, 157, 35);
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    word-spacing: normal;
+
+}
+.container{
+    padding: 80px 10px 660px 60px;
+    
+}
+input[type = "text"]{
+    background-color: #191919;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 50%;
+    padding: 12px;
+
+}
+input[type = "email"]{
+    background-color: #191919;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 50%;
+    padding: 12px;
+
+}
+input[type = text] select, textarea{
+        background-color: #191919;
+        border: 1px solid black;
+        border-radius: 4px;
+        width: 50%;
+}
+input[type ="submit"]{
+    color: rgb(214, 157, 35);
+    background-color: #191919;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 12px;
+
+
+}
