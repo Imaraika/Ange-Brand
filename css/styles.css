@@ -6,26 +6,24 @@ body{
     display: block;
     font-size: 14px;
     line-height: 20px;
-    justify-content: center;
+    justify-content: left;
 }
 }
-.body{
+.body {
     background-image: linear-gradient(0deg,#000,transparent 70%,transparent),url('../Asset/images/imageBckg.png');
     background-repeat: no-repeat;
     background-position: 0 0,90% 0%;
     background-size:auto, contain;
-    background-attachment: scroll, fixed;
+    background-attachment: fixed;
     background-color: black;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    word-spacing: 0.7rem;
-    
+    word-spacing: 0.7rem; 
 }
 nav {
-    padding: 10px 10px 0px 60px;
     display: flex;
+    background-position: 10px 10px 0px 0px;
     background-attachment: fixed;
-    flex-direction: row;
     justify-content: space-between;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
