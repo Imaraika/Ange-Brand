@@ -4,16 +4,8 @@
 body{
     background-color: black;
     color: white;
-}
-@media only screen and (max-width: 991px){
-body{
-    display: block;
-    font-size: 14px;
-    line-height: 20px;
-    justify-content: left;
-}
+    }
 
-}  
 .body {
     background-image: linear-gradient(0deg,#000,transparent 70%,transparent),url('../Asset/images/imageBckg.png');
     background-repeat: no-repeat;
@@ -24,8 +16,13 @@ body{
     color: white;
     font-family: 'Times New Roman', Times, serif;
     word-spacing: 0.7rem; 
+    margin-top: 10px;
 }
 nav {
+    position: fixed;
+    top:0 ;
+    height: auto;
+    width: 100%;
     display: flex;
     background-position: 10px 10px 0px 0px;
     background-attachment: fixed;
@@ -34,6 +31,7 @@ nav {
     font-family: 'Times New Roman', Times, serif;
     padding: 10px 60px;
     word-spacing: 2rem;
+    background-color: #191919;
         
 }
 a{
@@ -89,8 +87,7 @@ nav > div > a:hover{
 
 }
 .Contactcontainer{
-    padding: 80px 10px 660px 60px;
-    
+    padding: 80px 10px 660px 60px;   
 }
 input[type = "text"]{
     background-color: #191919;
@@ -169,7 +166,7 @@ main > div > form > input[type="password"]{
     /* border-bottom: rgb(5, 5, 5); */
     background-color: #191919;
 }
-main > div > form > input[type="button"]{
+main > div > form > input[type="submit"]{
     width: 100%; 
     min-height: 3rem;
     color: white;
@@ -186,12 +183,12 @@ main > div > form > input[type="button"]{
     flex: 1;
     justify-content: space-around;
     width: 50%;
-    margin-top: 10px;
+    margin-top: 40px;
     margin-left: 50px;
     }
     .blogcontainer > h2{
         text-align: center;
-        /* margin-left: 100px; */
+        padding-top: 40px;
     }
    #commenti{
         color:rgb(214, 157, 35);;
@@ -199,7 +196,7 @@ main > div > form > input[type="button"]{
 .divblog{
     border: 1px solid rgb(5, 5, 5); 
     border-radius:4px;
-     background-image: linear-gradient(rgb(20, 27, 46), rgb(10, 10, 10));
+     background-image: linear-gradient(rgb(7, 9, 15), rgb(10, 10, 10));
 }
 .rdmorebtn{
    color:white;
@@ -209,8 +206,15 @@ main > div > form > input[type="button"]{
    min-height: 2rem;
 }
  .loginfrm{
-    float: right;
-    width: 40%;
+    width: 50%;
+    margin: 0px;
+    padding: 450px 20px;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+
 }
 .signupbtn{
     border: none;
@@ -225,3 +229,39 @@ main > div > form > input[type="button"]{
     background-color: black;
     color: white;
 }
+.blogsection{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.workcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-weight: bolder;
+    padding: 150px;
+}
+@media only screen and (max-width: 701px){ 
+body{
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+    justify-content: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+.descrptionmessage{
+    width: 100%;
+    display: block;
+    flex-direction: column;
+    background-image: none;
+    font-size: 7px;
+}
+#pmd{
+    font-size: 18px;
+}
+.container{
+    width: auto;
+}
+
+} 
