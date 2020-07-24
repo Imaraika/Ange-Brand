@@ -18,7 +18,7 @@ body{
     background-attachment: fixed;
     background-color: black;
     color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Times New Roman', Times, serif;
     word-spacing: 0.7rem; 
 }
 nav {
@@ -28,6 +28,8 @@ nav {
     justify-content: space-between;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
+    padding: 10px 60px;
+    word-spacing: 2rem;
         
 }
 a{
@@ -44,7 +46,7 @@ nav > div > a:hover{
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    padding: 80px 10px 660px 60px;
+    padding: 80px 10px 160px 60px;
     background-image: none;
     transition: all 2s ease;
     font-family: 'Times New Roman', Times, serif;
@@ -72,6 +74,9 @@ nav > div > a:hover{
   
 }
 #learnme{
+    background-color: #191919;
+    border: 1px solid black;
+    border-radius: 5px;
     color: rgb(214, 157, 35);
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
@@ -112,5 +117,10 @@ input[type ="submit"]{
     border-radius: 4px;
     padding: 12px;
 
-
 }
+ .signinForm{
+    background-color: #191919;
+    width: 50vw;
+    min-height: 50vh;
+    padding: 100px; 
+} 
