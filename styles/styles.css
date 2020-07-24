@@ -1,6 +1,10 @@
 *{
     box-sizing: border-box;
 }
+body{
+    background-color: black;
+    color: white;
+}
 @media only screen and (max-width: 991px){
 body{
     display: block;
@@ -84,7 +88,7 @@ nav > div > a:hover{
     word-spacing: normal;
 
 }
-.container{
+.Contactcontainer{
     padding: 80px 10px 660px 60px;
     
 }
@@ -94,6 +98,7 @@ input[type = "text"]{
     border-radius: 5px;
     width: 50%;
     padding: 12px;
+    color: white;
 
 }
 input[type = "email"]{
@@ -102,6 +107,7 @@ input[type = "email"]{
     border-radius: 4px;
     width: 50%;
     padding: 12px;
+    color:white;
 
 }
 input[type = text] select, textarea{
@@ -109,6 +115,7 @@ input[type = text] select, textarea{
         border: 1px solid black;
         border-radius: 4px;
         width: 50%;
+        color: white;
 }
 input[type ="submit"]{
     color: rgb(214, 157, 35);
@@ -118,12 +125,61 @@ input[type ="submit"]{
     padding: 12px;
 
 }
- .signinForm{
+#signupheader{
+    text-align: center;
+}
+ .container{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 3em;
+    border-radius: 35px;
+    background: #191919 ;
+    margin: 50px auto;
+    border: 1px solid rgb(214, 157, 35) ;
+    scroll-behavior: smooth;
+}
+.userform{
+    width: 100%;
+    padding :0 3em;
+    
+}
+main > div > form > input[type="text"]{
+    width: 100%; 
+    min-height: 3rem;
+    color: white;
+    border: 1px solid rgb(214, 157, 35);
+    border-radius: 5px;
+}
+main > div > form > input[type="email"]{
+    width: 100%; 
+    min-height: 3rem;
+    color: white;
+    border: 1px solid rgb(214, 157, 35);
+    border-radius: 5px;
+}
+main > div > form > input[type="password"]{
+    width: 100%; 
+    min-height: 3rem;
+    color: white;
+    border: 1px solid rgb(214, 157, 35);
+    border-radius: 5px;
+    /* border-bottom: rgb(5, 5, 5); */
     background-color: #191919;
-    width: 50vw;
-    min-height: 50vh;
-    padding: 100px; 
-} 
+}
+main > div > form > input[type="button"]{
+    width: 100%; 
+    min-height: 3rem;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3rem;
+    background-color: rgb(214, 157, 35);
+    border-right-color: gray;
+    border-bottom-color: gray;
+    
+}
 .blogcontainer{
     display: flex;
     flex-direction: column;
@@ -138,7 +194,7 @@ input[type ="submit"]{
         /* margin-left: 100px; */
     }
    #commenti{
-        color:orange;
+        color:rgb(214, 157, 35);;
     }
 .divblog{
     border: 1px solid rgb(5, 5, 5); 
