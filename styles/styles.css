@@ -15,7 +15,7 @@ body{
     background-color: black;
     color: white;
     font-family: 'Times New Roman', Times, serif;
-    word-spacing: 0.7rem; 
+    /* word-spacing: normal;  */
     margin-top: 10px;
 }
 nav {
@@ -50,7 +50,7 @@ nav > div > a:hover{
     align-items: center;
     padding: 80px 10px 160px 60px;
     background-image: none;
-    transition: all 2s ease;
+    transition: all 1s ease;
     font-family: 'Times New Roman', Times, serif;
 
 }
