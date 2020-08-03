@@ -1,0 +1,199 @@
+body{
+    font-family: 'Poppins';
+}
+nav {
+    position: fixed;
+    top:0 ;
+    height: auto;
+    width: 90%;
+    display: flex;
+    background-position: 10px 10px 0px 0px;
+    background-attachment: fixed;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 60px;
+    word-spacing: 2rem;
+    background-color: #191919;
+        
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+nav > div > a:hover{
+    color: rgb(214, 157, 35);
+}
+.signupbtn{
+    border: none;
+    color: rgb(214, 157, 35);
+    font-size: 18px; 
+    background-color: transparent;
+}
+
+#post-wrapper {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 3em;
+}
+
+.like-btn {
+    padding: 10px;
+    border-radius: 10px;
+    background:orange;
+    transition: all 0.3s ease-in-out;
+}
+
+.like-btn:hover {
+    color: white;
+    background:rgb(3, 3, 43);
+}
+
+#headline {
+    flex-basis: 100%;
+    /* background: blue; */
+    font-size: xx-large;
+}
+
+#headline p {
+    opacity: 0.7;
+    font-size: medium;
+}
+
+#image {
+    flex-basis: 50%;
+}
+
+#image img {
+    max-width: 100%;
+    height: auto;
+}
+
+#content1 {
+    flex-basis: 50%;
+    letter-spacing: 1px;
+    font-size: large;
+    opacity: 0.8;
+    /* background: grey; */
+}
+
+#content3 {
+    padding-bottom: 40px;
+    border-bottom: 1px solid lightgray;
+}
+
+#content1, #content2, #content3 {
+    flex-basis: 85%;
+    font-size: 1.3em;
+    opacity: 0.85;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    width: 70%;
+}
+
+#content1 {
+    flex-basis: 35%;
+}
+
+#comment {
+    flex-basis: 100%;
+}
+
+.commenti{
+    border: solid 1px orange ;
+    border-radius: 4px;
+    margin: 10px auto;
+    font-size: x-large;
+    text-align: start;
+    width: 70%;
+}
+.fname{
+    width: 70%;
+    border: solid 1px orange;
+    border-radius: 4px;
+    font-size: 18px;
+    height: 7vh;
+}
+.comment-grid
+{
+    background-image: linear-gradient(rgb(50, 60, 92), rgb(10, 10, 10));
+    padding: 20px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-areas: 
+        "user-image user-name user-name"
+        "user-image user-comment user-comment"
+        "user-image date-posted date-posted"
+        "user-image like-count like-btn";
+        width: 100%;
+        color: white;
+        border-radius: 5px;
+
+    }
+.submit-comment{
+
+}
+
+/* .comment-grid {
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(218, 218, 218), rgb(245, 245, 245));
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "user-image user-name user-name"
+    "user-image user-comment user-comment"
+    "user-image date-posted date-posted"
+    "user-image like-count like-btn";
+    justify-items: center;
+    align-items: center;
+} */
+
+.user-image {
+    grid-area: user-image;
+    align-self: center;
+}
+
+.user-image img {
+    width: 150px;
+    height: 150px;
+    margin-right: 2.5em;
+    margin-bottom: 0px !important;
+}
+
+.user-name {
+    grid-area: user-name;
+    justify-self: start;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    font-size: x-large;
+}
+
+.user-comment {
+    grid-area: user-comment;
+    justify-self: start;
+    font-size: large;
+    letter-spacing: 1px;
+    text-align: start;
+}
+
+.user-comment span {
+    opacity: 0.7;
+    /* margin-top: 10px; */
+}
+
+.date-posted {
+    grid-area: date-posted;
+    justify-self: start;
+    opacity: 0.5;
+    font-size: .75em;
+}
