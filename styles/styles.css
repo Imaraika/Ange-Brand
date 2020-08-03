@@ -4,6 +4,8 @@
 body{
     background-color: black;
     color: white;
+    font-family: 'poppins';
+
     }
 
 .body {
@@ -14,8 +16,6 @@ body{
     background-attachment: fixed;
     background-color: black;
     color: white;
-    font-family: 'Times New Roman', Times, serif;
-    word-spacing: 0.7rem; 
     margin-top: 10px;
 }
 nav {
@@ -50,8 +50,8 @@ nav > div > a:hover{
     align-items: center;
     padding: 80px 10px 160px 60px;
     background-image: none;
-    transition: all 2s ease;
-    font-family: 'Times New Roman', Times, serif;
+    transition: all 1s ease;
+    font-family: 'poppins';
 
 }
 .link{
@@ -178,14 +178,10 @@ main > div > form > input[type="submit"]{
     
 }
 .blogcontainer{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    justify-content: space-around;
-    width: 50%;
     margin-top: 40px;
-    margin-left: 50px;
-    }
+    margin-left:55px;
+    margin-right: 500px;
+       }
     .blogcontainer > h2{
         text-align: center;
         padding-top: 40px;
@@ -196,7 +192,7 @@ main > div > form > input[type="submit"]{
 .divblog{
     border: 1px solid rgb(5, 5, 5); 
     border-radius:4px;
-     background-image: linear-gradient(rgb(7, 9, 15), rgb(10, 10, 10));
+     background-image: linear-gradient(rgb(50, 60, 92), rgb(10, 10, 10));
 }
 .rdmorebtn{
    color:white;
@@ -219,8 +215,8 @@ main > div > form > input[type="submit"]{
 .signupbtn{
     border: none;
     color: rgb(214, 157, 35);
-    font-size: 24px; 
-    background-color: black;
+    font-size: 18px; 
+    background-color: transparent;
 }
 .loginbtn{
     border: 1px solid rgb(214, 157, 35); 
