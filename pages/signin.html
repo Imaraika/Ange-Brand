@@ -21,13 +21,16 @@
                 <form action="">
                     <h2 id="signupheader">Login Form</h2>
                     <label for="username">Username</label><br><br>
-                    <input type="text" id="fname" name=""><br><br>
+                    <input type="text" id="email_field" name=""><br><br>
                     <label for="Password">Password</label><br><br>
-                    <input type="password" name=""><br><br>
-                    <input type="submit" value="Sign Up"><br><br>
+                    <input type="password" name="" id="password_field"><br><br>
+                    <input type="submit" value="Sign Up" onclick="login()"><br><br>
+                    <!-- <button >Sign IN</button> -->
                     <p class="signup"> You Don't have an Account ? <a href="signup.html" class="link"> Sign Up.</a></p>
                 </form>
             </div>  
-            </main>      
-</body>
+            </main>     
+            <script src="../scripts/firebasescript.js"></script>
+            <script src="../scripts/signin.js" ></script>
+        </body>
 </html>
