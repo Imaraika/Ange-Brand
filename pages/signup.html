@@ -17,7 +17,7 @@
         </div>
     </nav>
     <main class="container"> 
-        <div class="userform">
+        <div class="userform" id="signUpForm">
                 <form action="" method="POST">
                     <h2 id="signupheader">Sign Up</h2>
                     <label for="username">Username</label><br><br>
@@ -25,11 +25,15 @@
                     <label for="email">Email</label><br><br>
                     <input type="email"  id="email" name=""><br><br>
                     <label for="Password">Password</label><br><br>
-                    <input type="password" name=""><br><br>
+                    <input type="password" name="" id="password"><br><br>
                     <input type="submit" value="Sign Up"><br><br>
                     <p class="signup">Already have an account ? <a href="signin.html" class="link"> Login In.</a></p>
                 </form>
             </div>  
             </main>      
+            <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+            <script src="../scripts/signupScript.js"></script>
+            
 </body>
 </html>
