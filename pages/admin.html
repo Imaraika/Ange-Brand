@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="../styles/admin.css">
+    <title>My Brand</title>
+    
+</head>
+<body class="body">
+   
+    <nav>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="work.html">Work</a>
+            <a href="blog.html">Blog</a></div>
+            <a href="contact.html" style="color: orange;">Contact</a></div>
+    </nav>
+    <!-- <section> -->
+        <div class="adminContainer">
+            <span style="color: orange;">Articles</span>
+            <div id="articles">
+            </div>
+            <div><span>write new Article:</span></div>
+            <div>
+                <div>
+                    <form id="postdiv">
+                        <input type="text" id="title" placeholder="Title"><br><br>
+                        <textarea id="post" placeholder="Write your Article..."></textarea><br><br>
+                        <input type="file" id="imgAdmin">
+                        <div>
+                            <button type="button">Upload</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="ktitle"><span>Comments</span></div>
+            <div id="komment">
+
+            </div>
+        </div>
+    <!-- </section> -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+    <script src="../scripts/admin.js"></script>
