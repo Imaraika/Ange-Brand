@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -24,7 +26,7 @@
                     <input type="text" id="email_field" name=""><br><br>
                     <label for="Password">Password</label><br><br>
                     <input type="password" name="" id="password_field"><br><br>
-                    <input type="submit" value="Sign Up" onclick="login()"><br><br>
+                    <input type="submit" value="Login" onclick="login()"><br><br>
                     <!-- <button >Sign IN</button> -->
                     <p class="signup"> You Don't have an Account ? <a href="signup.html" class="link"> Sign Up.</a></p>
                 </form>
@@ -35,7 +37,22 @@
                 <p>welcome to my portfolio. you're currently logged In.</p>
                 <button>Logout</button>
             </div>   
-            <script src="../scripts/firebasescript.js"></script>
+            <script>
+            var firebaseConfig = {
+                  apiKey: "AIzaSyC3l1a6PVJXgacm5wW_o9ULj59Euda4Smg",
+                  authDomain: "portfolio-84bc5.firebaseapp.com",
+                  databaseURL: "https://portfolio-84bc5.firebaseio.com",
+                  projectId: "portfolio-84bc5",
+                  storageBucket: "portfolio-84bc5.appspot.com",
+                  messagingSenderId: "1012995269497",
+                  appId: "1:1012995269497:web:b37d929e1c37ede34a05a8",
+                  measurementId: "G-XS8F4J2K8E"
+                };
+                // Initialize Firebase
+                firebase.initializeApp(firebaseConfig);
+                // const db = firebase.firestore();
+              //   db.settings({ timestampsInSnapshots: true});
+              </script>
             <script src="../scripts/signin.js" ></script>
         </body>
 </html>

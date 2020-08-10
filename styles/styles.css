@@ -241,17 +241,20 @@ main > div > form > input[type="submit"]{
 @media only screen and (max-width: 701px){ 
 body{
     display: block;
-    font-size: 12px;
     line-height: 20px;
     justify-content: left;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'poppins';
+}
+
+#contactForm{
+    max-width:701px ;
+    margin-right: auto;
 }
 .descrptionmessage{
     width: 100%;
     display: block;
     flex-direction: column;
-    background-image: none;
-    font-size: 7px;
+
 }
 #pmd{
     font-size: 18px;
@@ -259,5 +262,14 @@ body{
 .container{
     width: auto;
 }
+.blogsection{
+    max-width: 100%;
+    background-image: none;
+}
+.blogcontainer{
+    max-width: 100%;
+    margin-right: 100px;
 
+    /* : none; */
+}
 } 
