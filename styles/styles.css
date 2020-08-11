@@ -134,13 +134,14 @@ input[type ="submit"]{
     padding: 0px 3em;
     border-radius: 35px;
     background: #191919 ;
-    margin: 50px auto;
+    margin: 60px auto;
     border: 1px solid rgb(214, 157, 35) ;
     scroll-behavior: smooth;
 }
 .userform{
     width: 100%;
     padding :0 3em;
+    margin-top:0px;
     
 }
 main > div > form > input[type="text"]{
@@ -195,6 +196,9 @@ main > div > form > input[type="submit"]{
      background-image: linear-gradient(rgb(50, 60, 92), rgb(10, 10, 10));
      height: 25%;
      font-size: 14px;
+     padding-bottom: 15px;
+     padding-left: 15px;
+
 }
 .rdmorebtn{
    color:white;
