@@ -34,9 +34,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   
         document.getElementById("userDiv").style.display = "block";
         document.getElementById("loginDiv").style.display = "none";
-  
-  
-      }
+        }
   
     } else {
       // No user is signed in.
@@ -50,7 +48,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   
     firebase.auth().signInWithEmailAndPassword(userEmail, userPass).then(function() {
       if(userEmail==='ange@gmail.com'&& userPass==='123456'){
-        window.location.href = 'admin.html';
+        window.location.href = 'posts.html';
         
       }else{
         window.location.href = 'blog.html';
