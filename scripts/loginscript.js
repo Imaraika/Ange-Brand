@@ -48,7 +48,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   
     firebase.auth().signInWithEmailAndPassword(userEmail, userPass).then(function() {
       if(userEmail==='ange@gmail.com'&& userPass==='123456'){
-        window.location.href = 'posts.html';
+        window.location.href = 'adminP.html';
         
       }else{
         window.location.href = 'blog.html';
@@ -64,20 +64,6 @@ firebase.auth().onAuthStateChanged(function(user) {
         window.alert("error: " + errorMessage)
       });
     }
-      
-    // }).catch(function(error) {
-      // Handle Errors here.
-    //   var errorCode = error.code;
-    //   var errorMessage = error.message;
-    //   document.querySelector('.alert2').style.display = 'block';
-  // Hide alert after 3 seconds
-//   setTimeout(function () {
-//     document.querySelector('.alert2').style.display = 'none';
-//   }, 3000);
-//     //   
-//     });
-    
-//   }
   function logout(){
     firebase.auth().signOut();
   }
