@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Asset/fonts/css/all.min.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="../styles/posts.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  
+      <link rel="stylesheet" href="../styles/posts.css">
     <title>My Brand</title>
     
 </head>
@@ -16,7 +18,8 @@
             <a href="work.html">Work</a>
             <a href="blog.html">Blog</a>
             <a href="contact.html">Contact</a></div>
-            <form><a href="signin.html"><input type="button" value="logout" class="signupbtn" onclick="logout()"></a></form></div>
+            <form><a href="signin.html"><input type="button" value="logout" class="signupbtn" onclick="logout()"></a>
+                  <a href="signinAdmin.html"><i class="fas fa-user-circle"></i><input type="button" value="Admin" class="signupbtn"></a></form></div>
      </nav>
 <section id="post-wrapper">
     <header id="headline">
@@ -45,13 +48,11 @@
     </div>
 
     <div id="comment">
-        <form>
+        <form id="add-comment-form">
             <div><p style="color: orange;">Leave a comment</p></div>
-            <textarea name="user-comment" class="commenti"></textarea>
-            <div><input type="text" placeholder="Your(real) Name" class="fname"></div>
-            <div class="submit-comment">
-                <button type="submit">Submit</button>
-            </div>
+            <textarea name="userComment" class="commenti"></textarea>
+            <div><input type="text"  name="name" placeholder="Your(real) Name" class="fname"></div>
+            <div class="submit-comment"><input type="submit" value="Submit"></div>
         </form>
     </div>
     <div id="commenti-block">
@@ -73,8 +74,10 @@
 </section>
 
 </main>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
 <script src="../scripts/firebasescript.js"></script>
-<script src="../scripts/script.js"></script>
+<!-- <script src="../scripts/script.js"></script> -->
 <script src="../scripts/posts.js"></script>
 </body>
 </html>

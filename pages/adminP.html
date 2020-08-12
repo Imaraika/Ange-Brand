@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Asset/fonts/css/all.min.css">
+    <link rel="stylesheet" href="../styles/adminP.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Admin's Page</title>
+</head>
+<body class="body">
+   
+    <nav>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="work.html">Work</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a></div>
+            <a href="signin.html" style="color: orange;"><i class="fas fa-user-circle"></i><span>Admin</a></div>
+    </nav>
+    <div class="admin-container">
+        <!-- <div class="admin-intro">
+            <div><img src="../Asset/images/avatar.jpg" alt="Avatar"></div>
+            <div><button>Edit Profile</button></div>  
+        </div> -->
+        <div class="table-container">
+            <table  cellspacing="0" id="table">
+                <caption><b>Lists of Blogs</b></caption><br/>
+                    <tr>
+                        <th>Blog Title</th>
+                        <th>Date </th>
+                        <th>Edit Blog</th>
+                        <th>Delete Blog</th>
+                    </tr>
+                    
+                    <tr class="table-container-tr">
+                        <td>Modern Css Techniques To Improve Legibility.</td>
+                        <td>11<sup>th</sup>-08-2020, 21:05</td>
+                        <td><img src="../Asset/images/editicon.png" height="45px" width="45px"/></td>
+                        <td><img src="../Asset/images/deleteicon.jpg" height="75px" width="55px"/></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Convert Any Website into Android Application in Android Studio in 10 minutes.</td>
+                        <td>11<sup>th</sup>-08-2020, 21:05</td>
+                        <td><img src="../Asset/images/editicon.png" height="45px" width="45px"/></td>
+                        <td><img src="../Asset/images/deleteicon.jpg" height="55px" width="55px"/></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>one hour to learn Android Studio.</td>
+                        <td>11<sup>th</sup>-08-2020, 21:05</td>
+                        <td><img src="../Asset/images/editicon.png" height="55px" width="55px"/></td>
+                        <td><img src="../Asset/images/deleteicon.jpg" height="75px" width="55px"/></td>
+                    </tr>
+            </table>
+        </div>
+        <div class="btn-div"><button onclick="display()"; id="displayed">Add New Content</button></div>
+        <div class="admin-form-container" id="admin-form-container">
+            
+            <form action="" class="admin-form" id="admin-form">
+                <div class="input-area">
+                    <div>
+                        <div>
+                            <label for="fname">Name</label><br>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name.." required><br><br>
+          
+                            <label for="author">Author</label><br>
+                            <input id="author"  type="text" required><br>
+                        </div>
+                        <div>
+                            <label for="title">Blog Title</label><br>
+                            <input type="text" id="blog-title" required><br>
+                        </div>
+                    </div>
+                </div>
+                <label for="blog">Blog Description</label><br>
+                <textarea name="blog" id="blog-description" cols="30" rows="10" required ></textarea><br>
+                <button type="submit">Save</button>
+                <div class="blog-alert">Thanks! Your Blog has been added</div>
+            </form>
+        </div>
+        <div class="update">
+
+            <form action="" class="admin-update-form" id="admin-update-form">
+                <div class="input-area">
+                    <div>
+                        <div>
+                            <label for="author">Edit Author</label>
+                            <input id="update-author"  type="text"><br>
+                        </div>
+                        <div>
+                            <label for="title">Edit Blog Title</label>
+                            <input type="text" id="update-blog-title" ><br>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h1>Blogs Editor Form</h1>
+                    </div>
+                </div>
+                <label for="blog">Edit Blog Description</label>
+                <textarea name="blog" id="update-blog-description" cols="30" rows="10"></textarea><br>
+                <button type="submit" onclick="update()";>Edit Content</button>
+            </form>
+        </div>
+        <div class="admin-messages">
+
+        </div>
+        
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/firebasescript.js"></script>
+    <script src="../scripts/adminP.js"></script>
+
+</body>
+</html>
