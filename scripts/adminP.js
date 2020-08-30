@@ -6,8 +6,8 @@ const blogUI = document.querySelector('#table');
 
 function renderMessage(doc){
     let div = document.createElement('div');
-    let name = document.createElement('span');
-    let message = document.createElement('span');
+    let name = document.createElement('h2');
+    let message = document.createElement('p');
 
     div.setAttribute('data-id', doc.id);
     name.textContent = doc.data().name;
@@ -81,13 +81,11 @@ db.collection('Blogs').doc().set({
  // Get blog ui in table
  const getBlogUI = (data)=>{
   let ui= `
-  <caption><b>Lists of Blogs</b></caption><br/>
-  <tr>
-      <th>Blog Title</th>
-      <th>Published</th>
-      <th>Edit Blog</th>
-      <th>Delete Blog</th>
-  </tr>
+  <h2><b>Blogs</b></h2><br/>            
+            <ul id="lstblg">
+                <li>Blog Title</li>
+                <li><b>Date</b></li>
+  </ul>
   `;
   data.forEach(item=>{
     const blog =item.data();
@@ -95,12 +93,12 @@ db.collection('Blogs').doc().set({
     console.log(blog);
     let blogUIFormat =`
  
-        <tr>
-            <td>${blog.title}</td>
-            <td>${blog.date}</td>
-            <td><img onclick="editBlog(${item.id})" src="../Asset/images/editicon.png" height="45px" width="45px"></td>
-            <td><img onclick="deleteBlog(${item.id})" id="${item.id}" src="../Asset/images/deleteicon.jpg" height="55px" width="55px"/></td>
-        </tr>
+        <ul>
+            <li>${blog.title}</li>
+            <li>${blog.date}</li>
+            <li><img onclick="editBlog(${item.id})" src="../Asset/images/editicon.png" height="25px" width="25px"></li>
+            <li><img onclick="deleteBlog(${item.id})" id="${item.id}" src="../Asset/images/deleteicon.jpg" height="25px" width="25px"/></li>
+        </ul>
     `
     ui+=blogUIFormat
   })
