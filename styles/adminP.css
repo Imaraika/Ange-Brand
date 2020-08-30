@@ -64,10 +64,13 @@ nav > div > a:hover{
     padding: 3px;
     font-size: 20px;
     }
-    tr > th:first-child{
-    text-align: left;
-    } */
-    .table-container h2{
+/*  */
+/* #lstblg{
+    position :absolute;
+    justify-content: space-between;
+    align-items: center;
+/* } */
+     .table-container h2{
     text-transform: uppercase;
     margin-bottom: 1em;
     color: orange;
