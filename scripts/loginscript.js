@@ -21,7 +21,7 @@ function submitForm(e) {
   document.getElementById('loginForm').reset();
 }
 
-// Function to get get form values
+// Function to get form values
 function getInputVal(id) {
     return document.getElementById(id).value;
   }
@@ -51,7 +51,7 @@ firebase.auth().onAuthStateChanged(function(user) {
         window.location.href = 'adminP.html';
         
       }else{
-        window.location.href = 'blog.html';
+        window.location.href = 'posts.html';
         
       }
     
