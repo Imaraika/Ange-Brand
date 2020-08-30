@@ -1,29 +1,35 @@
 const dbcontactMSg = firebase.firestore();
 const db = firebase.firestore();
 document.getElementById('admin-form').addEventListener('submit', submitBlog);
-const messagesDiv= document.querySelector('.admin-messages');
+const messagesDiv= document.querySelector('#table2');
 const blogUI = document.querySelector('#table');
-
-function renderMessage(doc){
-    let div = document.createElement('div');
-    let name = document.createElement('h2');
-    let message = document.createElement('p');
-
-    div.setAttribute('data-id', doc.id);
-    name.textContent = doc.data().name;
-    message.textContent = doc.data().message;
-
-   div.appendChild(name);
-div.appendChild(message);
-messagesDiv.appendChild(div);
-}
-
-//getting the message from users collection
-dbcontactMSg.collection('users').get().then((snapshot)=>{
-    snapshot.docs.forEach(doc => {
-        renderMessage(doc);
-    })
-})
+const msgUI = document.querySelector('#table2');
+const getMsgUI = (data)=>{
+    let uim= `
+    <h2><b>Messages</b></h2><br/>
+    <ul id="lstmsg">
+      <li><b>Names</b></li>
+      <li><b>Message</b></li>
+    </ul>
+    `;
+    data.forEach(item=>{
+      const mesga =item.data();
+      //console.log(item.id)
+      console.log(mesga);
+      let msgUIFormat =`
+      <ul>
+      <li>${mesga.name}</li>
+      <li>${mesga.message}</li>
+      <li><img onclick="deleteMessage(${item.id})" id="${item.id}" src="../Asset/images/deleteicon.jpg" height="25px" width="25px"/></li>
+  </ul>  `
+  uim+=msgUIFormat
+  })
+  msgUI.innerHTML = uim
+  }
+  
+  db.collection("users").get().then(info=>{
+  getMsgUI(info.docs)
+  });
 
 function submitBlog(e){
   e.preventDefault();
@@ -105,12 +111,9 @@ db.collection('Blogs').doc().set({
   blogUI.innerHTML = ui
 }
 
-
-
 db.collection("Blogs").get().then(info=>{
   getBlogUI(info.docs)
 });
-
 // deleting a Blog
 
 function deleteBlog(e){
@@ -123,7 +126,6 @@ function deleteBlog(e){
     });
   })
 }
-
 const updateAuthor= document.querySelector('#update-author')
 const updateTitle= document.querySelector('#update-blog-title')
 const updateBlogDesc= document.querySelector('#update-blog-description')
