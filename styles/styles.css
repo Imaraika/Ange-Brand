@@ -5,6 +5,7 @@ body{
     background-color: black;
     color: white;
     font-family: 'poppins';
+   
 
     }
 
@@ -16,7 +17,7 @@ body{
     background-attachment: fixed;
     background-color: black;
     color: white;
-    margin-top: 10px;
+    margin-top: 10px 0px;
 }
 nav {
     position: fixed;
@@ -61,17 +62,16 @@ nav > div > a:hover{
 }
 
 #phd{
-    font-size: 24px;
+    font-size: 26px;
 }
 #pmd{
-    font-size: 36px;
+    font-size: 34px;
     display: block;
-    font-size: 46px;
     font-weight: bold;
 
 }
 #pfd{
-    font-size: 24px;
+    font-size: 18px;
     font-weight: lighter;
     color: lightgray;
   
@@ -191,8 +191,6 @@ main > div > form > input[type="submit"]{
     width: 100%; 
     min-height: 3rem;
     color: white;
-    border: 1px solid white;
-    border-radius: 3rem;
     background-color: rgb(214, 157, 35);
     border-right-color: gray;
     border-bottom-color: gray;
